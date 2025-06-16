@@ -1,5 +1,5 @@
 # Welcome!
-I'll update this readme as soon as I think of something good to write... enjoy this spotify widget tho
+I'll update this readme as soon as I think of something good to write... meanwhile enjoy this spotify widget
 
 <picture>
   <source
