@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
-<body>
-    <div id="datetime"></div>
-    <p>Under development</p>
-</body>
-    <script>
-    function updateDateTime() {
-        const now = new Date();
-        const year = now.getFullYear();
-        const month = String(now.getMonth() + 1).padStart(2, '0');
-        const day = now.getDate(); // Non usare padStart se vuoi senza 0 iniziale
-        const hours = String(now.getHours()).padStart(2, '0');
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const seconds = String(now.getSeconds()).padStart(2, '0');
-        const milliseconds = String(Math.floor(now.getMilliseconds() / 10)).padStart(2, '0');
 
-        const formattedDateTime = `${day} ${month} ${year} ${hours}:${minutes}:${seconds}:${milliseconds}`;
-        document.getElementById('datetime').textContent = formattedDateTime;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website under development!</title>
+        <style>
+            body {
+                user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+        </style>
+    </head>
 
-    setInterval(updateDateTime, 1);
-    updateDateTime();
-</script>
+    <body>
+        <div id="datetime"></div>
+        <h1>Nsetn.... Oirao Ivook</h1>
+        <ul>
+            <li><a target="_blank" href="https://www.instagram.com/iosonopiga/">Instagram</a></li>
+            <li><a target="_blank" href="https://www.discogs.com/it/user/AlePiga/collection">Discogs</a></li>
+            <li><a target="_blank" href="https://stats.fm/piga/">stats.fm</a></li>
+            <li><a target="_blank" href="https://youtube.com/@AlePiga">YouTube</a></li>
+            <li><a target="_blank" href="https://github.com/AlePiga">GitHub</a></li>
+            <li><a target="_blank" href="https://x.com/iosonopiga">X (fka Twitter)</a></li>
+        </ul>
+
+        <script src="./script.js"></script>
+    </body>
+
 </html>
