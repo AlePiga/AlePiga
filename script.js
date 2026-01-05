@@ -8,7 +8,7 @@ function updateDateTime() {
 	const seconds = String(now.getSeconds()).padStart(2, "0");
 	const milliseconds = String(Math.floor(now.getMilliseconds() / 10)).padStart(2, "0");
 
-	const formattedDateTime = `${month} ${day} ${year} ${hours}:${minutes}:${seconds}:${milliseconds}`;
+	const formattedDateTime = `${month} ${day} ${year} + "\n" + ${hours}:${minutes}:${seconds}:${milliseconds}`;
 	document.getElementById("datetime").textContent = formattedDateTime;
 }
 
