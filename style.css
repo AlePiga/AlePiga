@@ -26,5 +26,6 @@ ul,
 li,
 a,
 #datetime {
+	white-space: pre-line;
 	font-size: inherit;
 }
