@@ -7,6 +7,11 @@ body {
 	user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	/* mantieni la sintesi del peso per evitare che il grassetto scompaia del tutto */
+	font-synthesis: weight;
 
 	display: flex;
 	flex-direction: column;
