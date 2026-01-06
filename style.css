@@ -1,3 +1,8 @@
+@font-face {
+	font-family: SFProDisplay;
+	src: url(./assets/SFProDisplay.ttf);
+}
+
 body {
 	user-select: none;
 	-webkit-user-select: none;
@@ -11,6 +16,7 @@ body {
 	min-height: 100vh;
 	margin: 0;
 
+	font-family: SFProDisplay;
 	font-size: 16px;
 	text-align: center;
 }
@@ -27,4 +33,14 @@ li,
 a,
 #datetime {
 	font-size: inherit;
+}
+
+img {
+	display: none;
+	margin: 1rem auto;
+	max-width: 100%;
+	height: auto;
+	align-self: center;
+	width: 350px;
+	height: 200px;
 }
