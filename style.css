@@ -10,7 +10,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
-	/* mantieni la sintesi del peso per evitare che il grassetto scompaia del tutto */
 	font-synthesis: weight;
 
 	display: flex;
