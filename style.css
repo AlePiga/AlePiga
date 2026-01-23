@@ -39,18 +39,56 @@ a,
 	font-size: inherit;
 }
 
-img {
-	display: block;
-	margin: 1rem auto;
-	max-width: 100%;
-	height: auto;
+.btn {
+	padding: 10px 20px;
+	border: 1.8px solid; /* Colore rimosso, gestito da JS */
+	border-radius: 12px;
+	background-color: transparent; /* Sfondo trasparente di base */
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
 	align-self: center;
-	-webkit-user-drag: none;
-	user-drag: none;
+	text-decoration: none;
+	margin-right: 7.5px;
+	display: inline-block; /* Assicura il corretto padding */
 }
 
-#nsetn {
-	display: none;
-	width: 200px;
-	height: auto;
+#links1 {
+	margin-top: 10px;
+	margin-bottom: 33px;
+}
+
+/* Contenitore principale dei link */
+.container-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px; /* Ridotto leggermente per guadagnare spazio */
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 0 10px;
+}
+
+.btn {
+	/* Fondamentale per il layout */
+	flex: 1 1 calc(33.333% - 30px); /* Tenta di occupare il 33%, sottraendo il gap */
+	min-width: 250px; /* Se lo schermo è piccolo, non scendere sotto i 250px e vai a capo */
+	max-width: 100%; /* Non uscire mai dai bordi dello schermo */
+	border-color: black;
+	color: black;
+	/* Estetica (già presente) */
+	padding: 15px 10px;
+	border: 1.8px solid;
+	border-radius: 12px;
+	background-color: transparent;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	box-sizing: border-box; /* Include padding e bordo nel calcolo della larghezza */
+
+	/* Allineamento testo interno */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
